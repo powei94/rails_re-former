@@ -26,14 +26,15 @@
     <% end %>
 <% end %>
 
-<% if true %>
-    <%= form_for @user do |f| %>
-        <%= f.label :username, "Your Username"%>
-        <%= f.text_field :username, placeholder: "user33" %><br><br>
-        <%= f.label :email, "Email"%>
-        <%= f.text_field :email, placeholder: "user@email.com" %><br><br>
-        <%= f.label :password, "Password" %>
-        <%= f.password_field :password%><br><br>
-        <%= f.submit "Guardar Cambios" %>
-    <% end %>
+<%= form_for @user do |f| %>
+    <%= f.label :username, "Your Username"%>
+    <%= f.text_field :username, placeholder: "user33" %><br><br>
+    <%= f.label :email, "Email"%>
+    <%= f.text_field :email, placeholder: "user@email.com" %><br><br>
+    <%= f.label :password, "Password" %>
+    <%= f.password_field :password%><br><br>
+    <%= f.submit "Guardar Cambios" %>
+
+
+    
 <% end %>
